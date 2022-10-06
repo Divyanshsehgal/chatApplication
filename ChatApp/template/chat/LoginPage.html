@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url("https://media.istockphoto.com/vectors/cyber-network-protection-future-technology-background-vector-id1333211562?b=1&k=20&m=1333211562&s=612x612&w=0&h=DbXMLVi1HD-4IelMBoxrqQAq3xNNHB1D7Wlsvsj1tqQ=");
+                background-size: cover;
+				background-attachment: fixed;
+            }
+            
+            h1{
+                color:red;
+                text-align: center;
+                margin-top: 20%;
+
+            }
+            .post{
+                text-align: center;
+                
+            }
+            
+        </style>
+    </head>
+<body>
+    <h1>Chat Application</h1>
+    <form method ="post" class="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <br>
+        <button type = "submit">Login</button>
+    </form>
+    
+</body>
+</html>
